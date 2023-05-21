@@ -1,0 +1,15 @@
+
+
+.image{
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: stretch;
+}
+

@@ -1,0 +1,75 @@
+.card{
+    border: 1px solid black;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+}
+
+.borde{
+    width: 15rem;
+    height: 18rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    display: inline-grid;
+    align-content: space-around;
+    border: 2px #2d3436;
+    background-color:rgb(250, 244, 244, 99%);
+    box-shadow: 0px 7px 8px 3px rgba(64, 64, 64, 0.415);
+}
+
+.contenido{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+    align-content: space-around;
+    padding: none;
+    text-decoration: none;
+}
+
+.info{
+    height: 4rem;
+    width: 12rem;
+    text-align: center;
+}
+
+.name{
+    font-family: 'lenora';
+}
+
+.flag{
+    background: center;
+    width: 8rem;
+    height: 5rem;
+    justify-items: end;
+}
+
+.detailDiv{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid #2d3436;
+    padding: 14px 50px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+}
+
+
+
+.detailButton{
+    border: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    color: #2d3436;
+    background: none;
+    font-size: 14 px;
+    font-family: "montserrat";
+    transition: all .6s ease;
+}
+
+.detailButton:hover{
+    font-weight: bolder;
+}
+

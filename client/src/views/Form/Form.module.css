@@ -1,0 +1,248 @@
+.formBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    margin: 20px auto;
+    margin-top: 6em;
+    transform: translate(-50%, -55%);
+    background: rgba(0,0,0);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    
+}
+
+.imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; /* Evita el scroll */
+    height: 100vh; /* Ajusta la altura al 100% de la ventana */
+    background-image: url('../../views/Landing/images/wolrdMap1.jpeg');
+  }
+
+.h1{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    font-family: 'montserrat';
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.namecontainer{
+    position: relative;
+}
+
+.nameInput{
+    width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  background-color: #2d3436;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.label{
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s; 
+}
+
+.nameInput:focus ~ label,
+.nameInput:valid ~ label{
+    top: -20px;
+  left: 0;
+  color: #fff;
+  font-size: 12px;
+}
+
+.difficultyContainer{
+    position: relative;
+    padding-top: 2em;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    /* text-align: left; */
+    align-items: center;
+}
+
+.difficultyInput{
+    cursor: pointer;
+        /* color: red; */
+        border: none;
+        background-color: #e2e7f3;
+        font-size: medium;
+        height: 1rem;
+        width: 1rem;
+}
+
+input[type="radio"]:checked:after { 
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: darkgray;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+ }
+
+.difficultyLabel{
+        text-align: start;
+        padding: none;
+        /* margin-left: 0.5rem; */
+        font-size: 0.9rem;
+        color: #fff;
+        font-family: 'montserrat';
+}
+
+.durationContainer{
+    position: relative;
+    padding-top: 2.5em;
+}
+
+.durationInput{
+    cursor: pointer;
+    border: none;
+    background-color: #e2e7f3;
+    border-radius: 0.5rem;
+    font-size: medium;
+    height: 2rem;
+    width: 18rem;
+    margin-left: 1rem;
+    padding-left: 0.5rem;
+    margin: 1rem;
+}
+
+.seasonContainer{
+    padding-top: 1em;
+}
+
+.seasonSelect{
+    cursor: auto;
+    border: none;
+    background-color: #e2e7f3;
+    border-radius: 0.5rem;
+    font-size: medium;
+    height: 2rem;
+    width: 18rem;
+    margin-left: 1rem;
+    padding-left: 0.5rem;
+    margin: 1rem;  
+}
+
+.countriesSelect{
+    cursor: auto;
+    border: none;
+    background-color: #e2e7f3;
+    border-radius: 0.5rem;
+    font-size: medium;
+    height: 2rem;
+    width: 18rem;
+    margin-left: 1rem;
+    padding-left: 0.5rem;
+    margin: 1rem;
+}
+
+.countriesContainer{
+    display: flex;
+    /* max-width: 5rem; */
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: stretch;
+    flex-wrap: wrap;
+    padding-top: 1em;
+}
+
+.selectedCountriesContainer{
+    padding-top: 1em;
+}
+
+.contenedorCountry{
+    display: flex;
+    align-items: center;
+}
+
+.buttonClose{
+    cursor: pointer;
+    border-width: 3px;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+    height: 1rem;
+    width: 1.5rem;
+    color: white;
+    border: none;
+    background-color:rgb(55, 55, 55);
+}
+
+.buttonClose:hover{
+    background-color:rgb(55, 55, 55);
+    color:white;
+    border: none;
+    font-weight: bold;
+    box-shadow:-6px 8px 12px -11px rgba(0,0,0,0.77);
+    -webkit-box-shadow: -6px 8px 12px -11px rgba(0,0,0,0.77);
+    -moz-box-shadow: -6px 8px 12px -11px rgba(0,0,0,0.77);
+}
+
+.parrafo{
+    color: #fff;
+    margin: 0rem ;
+    padding: 0.5rem;
+    
+}
+
+.error{
+    border-radius: 1rem;
+    padding: 0.5rem;
+    font-size: medium;
+    text-align: center;
+    font-weight: 300;
+    animation: errores 2s ease infinite;
+    color: #fff;
+    }
+    @keyframes errores{
+        0%{
+            
+            color:rgb(55, 55, 55);
+        }
+        50%{
+            background-color: rgb(55, 55, 55);
+            color: rgb(255, 255, 255);
+            
+        }
+        
+    100%{
+        color: rgb(55, 55, 55);
+    }
+    }
+
+.submitButton{
+    cursor: pointer;
+        border-width: 3px;
+        border-radius: 0.5rem;
+        height: 2rem;
+        width: 14rem;
+        margin: 3rem;
+        color: white;
+        border: none;
+        background-color:rgb(55, 55, 55);
+}
+

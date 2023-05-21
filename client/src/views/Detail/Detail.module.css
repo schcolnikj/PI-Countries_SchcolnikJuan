@@ -1,0 +1,109 @@
+.image{
+    width: auto;
+    height: 15rem;
+    padding: 1rem;
+}
+
+
+.boxes{
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+    border: 2px solid white;
+    text-align: center;
+    position: relative;
+}
+
+.boxes:hover{
+    border: solid #2d3436;
+}
+
+.container{
+    display: flex;
+    padding: 1rem;
+    margin: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.div{
+    position: relative;
+}
+
+.detail{
+    height: 15rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(76, 0, 130, 0);
+}
+.name{
+    font-family: 'lenora';
+    font-size: 28px;
+}
+
+.activity{
+    color: #2d3436;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    border: 1rem;
+    height: 15rem;
+}
+
+.boxActivity{
+    width: 15rem;
+    height: 9rem;
+}
+
+.return{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -3rem;
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(15, 15, 15);
+    border: none;
+    color: white;
+    font-weight: 600;
+    gap: 8px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+    overflow: hidden;
+    transition-duration: .3s;
+}
+
+.return::before {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+    left: -100%;
+    top: 0;
+    transition-duration: .3s;
+    mix-blend-mode: difference;
+  }
+  
+  .return:hover::before {
+    transition-duration: .3s;
+    transform: translate(100%,-50%);
+    border-radius: 0;
+  }
+  
+  /* .return:active {
+    transform: translate(5px,5px);
+    transition-duration: .3s;
+  } */
+
+  .linkReturn{
+    text-decoration: none;
+  }
