@@ -19,7 +19,7 @@ const mapeo = async (arr) => {
 
 const getAllCountries = async () => {
     try {     
-        const apiData = (await axios(`https://restcountries.com/v3/all`)).data;
+        const apiData = (await axios(`https://rest-countries.up.railway.app/v3/all`)).data;
         
         const apiCountries = await mapeo(apiData);
         
