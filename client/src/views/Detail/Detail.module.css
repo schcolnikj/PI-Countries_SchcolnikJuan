@@ -35,7 +35,7 @@
 .detail{
     height: 15rem;
     width: 100%;
-    padding: 1rem;
+    padding: 0;
     background-color: rgba(76, 0, 130, 0);
 }
 .name{
