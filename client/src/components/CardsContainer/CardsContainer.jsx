@@ -56,12 +56,10 @@ const CardsContainer = () => {
       
     return (
         <div>
-            {console.log(countries)}
             {countries.length === 0
             ?
             <div className={style.bkground}>
             <div class={style.wrapper}>
-            {console.log(countries)}
                 <div class={style.circle}></div>
                 <div class={style.circle}></div>
                 <div class={style.circle}></div>
@@ -69,7 +67,6 @@ const CardsContainer = () => {
                 <div class={style.shadow}></div>
                 <div class={style.shadow}></div>
             </div>
-            {console.log(countries)}
         </div>
         
             :

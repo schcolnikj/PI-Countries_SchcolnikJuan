@@ -1,8 +1,10 @@
 .formBox{
     position: absolute;
+    max-height: 830px;
+    overflow: auto;
     top: 50%;
     left: 50%;
-    width: 400px;
+    width: 450px;
     padding: 40px;
     margin: 20px auto;
     margin-top: 6em;
