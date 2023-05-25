@@ -57,10 +57,14 @@ const Form = () => {
     }
 
     const handleCountrySelect = (event) => {
+        if (input.countries.includes(event.target.value)) {
+            console.log("You can not repeat the same country");
+          } else {
             setInput({
               ...input,
               countries: [...input.countries, event.target.value],
             });
+          }
 
             setErrors(validate({
                 ...input,

@@ -35,7 +35,7 @@
 .detail{
     height: 15rem;
     width: 100%;
-    padding: 0;
+    padding: 1rem;
     background-color: rgba(76, 0, 130, 0);
 }
 .name{
@@ -52,11 +52,15 @@
     flex-direction: row;
     border: 1rem;
     height: 15rem;
+    overflow-x: auto; /* Agrega desplazamiento horizontal */
+    overflow-y: hidden; /* Oculta el desplazamiento vertical */
+    white-space: nowrap; /* Evita el ajuste de línea */
 }
 
 .boxActivity{
     width: 15rem;
     height: 9rem;
+    margin-right: 1rem;
 }
 
 .return{

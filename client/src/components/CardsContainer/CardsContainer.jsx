@@ -55,17 +55,17 @@ const CardsContainer = () => {
       
       
     return (
-        <div>
+        <div> 
             {countries.length === 0
             ?
             <div className={style.bkground}>
-            <div className={style.wrapper}>
-                <div className={style.circle}></div>
-                <div className={style.circle}></div>
-                <div className={style.circle}></div>
-                <div className={style.shadow}></div>
-                <div className={style.shadow}></div>
-                <div className={style.shadow}></div>
+            <div class={style.wrapper}>
+                <div class={style.circle}></div>
+                <div class={style.circle}></div>
+                <div class={style.circle}></div>
+                <div class={style.shadow}></div>
+                <div class={style.shadow}></div>
+                <div class={style.shadow}></div>
             </div>
         </div>
         

@@ -24,6 +24,8 @@ const createActivity = async (name, difficulty, duration, season, countries) => 
 
     if(season !== "Summer" && season !== "Winter" && season !== "Autum" && season !== "Spring") throw Error('You must choose one of the seasons!')
 
+    
+
     const newActivity = await Activity.create(
         {
             name, 

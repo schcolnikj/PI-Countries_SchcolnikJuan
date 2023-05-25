@@ -1,166 +1,166 @@
-.container {
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden; /* Evita el scroll */
-  height: 100vh; /* Ajusta la altura al 100% de la ventana */
-  background-image: url('../../views/Landing/images/wolrdMap1.jpeg');
-}
+  .container {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; /* Evita el scroll */
+    height: 100vh; /* Ajusta la altura al 100% de la ventana */
+    background-image: url('../../views/Landing/images/wolrdMap1.jpeg');
+  }
 
 .cardsContainer {
-  display: flex;
-  padding: 2rem;
-  font: times;
-  width: auto;
-  height: auto;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
+    display: flex;
+    padding: 2rem;
+    font: times;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
 
 .filtros {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 3rem;
-  flex-wrap: nowrap;
-  align-items: center;
-  border: none;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 3rem;
+    flex-wrap: nowrap;
+    align-items: center;
+    border: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 
 .alfabetico{
-  border: none;
-  /* margin-left: 4rem; */
-  cursor: pointer;
-   background-color: #ffffff;
-  height: 1.5rem;
-  width: 8rem;
-  color:rgb(55, 55, 55);
-  text-align: center;
+    border: none;
+    /* margin-left: 4rem; */
+    cursor: pointer;
+     background-color: #ffffff;
+    height: 1.5rem;
+    width: 8rem;
+    color:rgb(55, 55, 55);
+    text-align: center;
 }
 
 .poblacionContinent{
-  border: none;
-  cursor: pointer;
-  height: 1.5rem;
-  width: 12rem;
-  color: rgb(55, 55, 55);
-  text-align: center;
+    border: none;
+    cursor: pointer;
+    height: 1.5rem;
+    width: 12rem;
+    color: rgb(55, 55, 55);
+    text-align: center;
 }
 
 .actividad{
-    /* margin-left: 4rem; */
-    cursor: pointer;
-    border: none;
-    background-color: #ffffff;
-    height: 1.5rem;
-    width: 8rem;
-    color: rgb(55, 55, 55);
-    text-align: center;
-    margin-right: 1rem;
+      /* margin-left: 4rem; */
+      cursor: pointer;
+      border: none;
+      background-color: #ffffff;
+      height: 1.5rem;
+      width: 8rem;
+      color: rgb(55, 55, 55);
+      text-align: center;
+      margin-right: 1rem;
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////// */  LOADER
 
 .bkground{
-width: 100vw;
-height: 100vh;
-background-color: #fff;
-align-content: center;
-justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  align-content: center;
+  justify-content: center;
 }
 
 .wrapper {
-margin-top: 25rem;
-width: 200px;
-height: 60px;
-position: relative;
-z-index: 1;
+  margin-top: 25rem;
+  width: 200px;
+  height: 60px;
+  position: relative;
+  z-index: 1;
 }
 
 .circle {
-width: 20px;
-height: 20px;
-position: absolute;
-border-radius: 50%;
-background-color: #2d3436;
-left: 15%;
-transform-origin: 50%;
-animation: circle7124 .5s alternate infinite ease;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #2d3436;
+  left: 15%;
+  transform-origin: 50%;
+  animation: circle7124 .5s alternate infinite ease;
 }
 
 @keyframes circle7124 {
-0% {
-  top: 60px;
-  height: 5px;
-  border-radius: 50px 50px 25px 25px;
-  transform: scaleX(1.7);
-}
+  0% {
+    top: 60px;
+    height: 5px;
+    border-radius: 50px 50px 25px 25px;
+    transform: scaleX(1.7);
+  }
 
-40% {
-  height: 20px;
-  border-radius: 50%;
-  transform: scaleX(1);
-}
+  40% {
+    height: 20px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
 
-100% {
-  top: 0%;
-}
+  100% {
+    top: 0%;
+  }
 }
 
 .circle:nth-child(2) {
-left: 45%;
-animation-delay: .2s;
+  left: 45%;
+  animation-delay: .2s;
 }
 
 .circle:nth-child(3) {
-left: auto;
-right: 15%;
-animation-delay: .3s;
+  left: auto;
+  right: 15%;
+  animation-delay: .3s;
 }
 
 .shadow {
-width: 20px;
-height: 4px;
-border-radius: 50%;
-background-color: rgba(0,0,0,0.9);
-position: absolute;
-top: 62px;
-transform-origin: 50%;
-z-index: -1;
-left: 15%;
-filter: blur(1px);
-animation: shadow046 .5s alternate infinite ease;
+  width: 20px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0.9);
+  position: absolute;
+  top: 62px;
+  transform-origin: 50%;
+  z-index: -1;
+  left: 15%;
+  filter: blur(1px);
+  animation: shadow046 .5s alternate infinite ease;
 }
 
 @keyframes shadow046 {
-0% {
-  transform: scaleX(1.5);
-}
+  0% {
+    transform: scaleX(1.5);
+  }
 
-40% {
-  transform: scaleX(1);
-  opacity: .7;
-}
+  40% {
+    transform: scaleX(1);
+    opacity: .7;
+  }
 
-100% {
-  transform: scaleX(.2);
-  opacity: .4;
-}
+  100% {
+    transform: scaleX(.2);
+    opacity: .4;
+  }
 }
 
 .shadow:nth-child(4) {
-left: 45%;
-animation-delay: .2s
+  left: 45%;
+  animation-delay: .2s
 }
 
 .shadow:nth-child(5) {
-left: auto;
-right: 15%;
-animation-delay: .3s;
+  left: auto;
+  right: 15%;
+  animation-delay: .3s;
 }

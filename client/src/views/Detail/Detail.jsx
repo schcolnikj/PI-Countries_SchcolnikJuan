@@ -15,7 +15,6 @@ const Detail = () =>{
       dispatch(getCountry(id))
      }, [dispatch, id]);
 
-     console.log(detail);
 
     return (
       <div className={style.container}>
