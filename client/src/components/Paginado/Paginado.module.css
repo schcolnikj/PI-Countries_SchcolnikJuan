@@ -10,7 +10,7 @@
     color: rgb(55, 55, 55);
     text-align: center;
     font-weight: bolder;
-    transition: .5s;
+    transition: .2s;
 }
 
 .pageButton:hover{
@@ -20,6 +20,20 @@
 .pageButton::selection {
     box-shadow: lightslategrey 2px;
     background-color: lightyellow;
+}
+
+.pageButtonActive{
+    font-size: 10px;
+    cursor: pointer;
+    border: 1px solid rgb(55, 55, 55);
+    border-radius: 1rem;
+    background-color: grey;
+    height: 2rem;
+    width: 4rem;
+    color: #fff;
+    text-align: center;
+    font-weight: bolder;
+    transition: .2s;
 }
 
 /* .number{

@@ -68,7 +68,7 @@
     left: 50%;
     transform: translateX(-50%);
     margin-top: -3rem;
-    width: 130px;
+    width: 200px;
     height: 40px;
     display: flex;
     align-items: center;
@@ -85,7 +85,7 @@
 }
 
 .return::before {
-    width: 130px;
+    width: 200px;
     height: 130px;
     position: absolute;
     content: "";

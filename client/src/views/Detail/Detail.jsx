@@ -49,7 +49,7 @@ const Detail = () =>{
                 </section>
                 <div className={style.returnBox}>
                   <Link to='/home' className={style.linkReturn}>
-                  <button className={style.return} >RETURN</button>
+                  <button className={style.return} >SEE ALL COUNTRIES</button>
                   </Link>
                 </div>
                 </div>

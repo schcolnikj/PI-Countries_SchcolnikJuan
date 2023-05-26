@@ -9,9 +9,13 @@ export const ORDER_BY_NAME = 'ORDER_BY_NAME'
 export const ORDER_BY_POPULATION = 'ORDER_BY_POPULATION'
 export const GET_ACTIVITIES = 'GET_ACTIVITIES'
 export const FILTER_BY_ACTIVITY = 'FILTER_BY_ACTIVITY'
+export const CLEAR = 'CLEAR'
+export const LOADER = 'LOADER'
 
 export const getCountries = () => {
     return async (dispatch) => {
+        dispatch({type: LOADER, payload:true})
+        
         const apiData = await axios('http://localhost:3001/countries');
         const countries = apiData.data;
 
@@ -92,4 +96,13 @@ export const filterByActivity = (payload) => {
           payload,
         });
       };
+}
+
+export const clear = () => {
+    return (dispatch) => {
+        return dispatch({
+            type: CLEAR,
+            payload: []
+        });
+    };
 }

@@ -1,5 +1,5 @@
 import { all } from "axios";
-import { CREATE_ACTIVITY, FILTER_BY_ACTIVITY, FILTER_BY_CONTINENT, GET_ACTIVITIES, ORDER_BY_NAME, ORDER_BY_POPULATION } from "./actions";
+import { CLEAR, CREATE_ACTIVITY, FILTER_BY_ACTIVITY, FILTER_BY_CONTINENT, GET_ACTIVITIES, LOADER, ORDER_BY_NAME, ORDER_BY_POPULATION } from "./actions";
 import { GET_COUNTRIES, GET_COUNTRY_BY_NAME, GET_COUNTRY } from "./actions";
 
 const initialState = {
@@ -7,12 +7,13 @@ const initialState = {
     allCountries:[],
     activities: [],
     detail: [],
+    loading: false,
 };
 
 const rootReducer = (state = initialState, action) => {
     switch(action.type){
         case GET_COUNTRIES:
-            return {...state, countries: action.payload, allCountries: action.payload}
+            return {...state, countries: action.payload, allCountries: action.payload, loading: false}
 
         case GET_COUNTRY_BY_NAME:
             return {...state, countries: action.payload}
@@ -82,13 +83,14 @@ const rootReducer = (state = initialState, action) => {
             return {...state}
     
         case FILTER_BY_ACTIVITY:
+            console.log(action.payload)
             const mapeoCountries =
                 action.payload === 'All'
                     ? state.allCountries
                     : state.allCountries.filter((c) => {
                         // console.log(c);
                           const mapeo = c.activities?.map((act) => act.name);
-                        //   console.log(mapeo);
+                          console.log(mapeo);
                           if (mapeo?.includes(action.payload)) {
                             return c;
                           }
@@ -99,6 +101,18 @@ const rootReducer = (state = initialState, action) => {
                 ...state,
                 countries: mapeoCountries,
             };
+
+        case CLEAR:
+            return{
+                ...state,
+                detail: action.payload
+            };
+
+        case LOADER:
+            return{
+                ...state,
+                loading: action.payload
+            }
 
         default:
             return {...state }; 

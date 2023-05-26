@@ -16,7 +16,7 @@ export const Paginado = ({totalCountries, countriesPerPage, setCurrentPage, curr
                         <button
                             key = {index} 
                             onClick = {() => setCurrentPage(page)}
-                            className={style.pageButton}
+                            className={page == currentPage ? style.pageButtonActive : style.pageButton}
                             >   
                                 <p  className = {style.number}>
                                 {page}

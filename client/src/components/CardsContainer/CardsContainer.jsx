@@ -4,6 +4,7 @@ import Card from "../Card/Card";
 import style from './CardsContainer.module.css';
 import { Paginado } from '../Paginado/Paginado';
 import { filterByContinent, orderByName, orderByPopulation, filterByActivity } from "../../redux/actions";
+import SearchBar from '../SearchBar/SearchBar';
 
 
 const CardsContainer = () => {
@@ -13,7 +14,7 @@ const CardsContainer = () => {
     const dispatch = useDispatch()
 
     const countries = useSelector(state => state.countries)
-    const { activities } = useSelector((state) => state);
+    const { activities, loading } = useSelector((state) => state);
 
     const lastCountryIndex = currentPage * countriesPerPage;
     const firstCountryIndex = lastCountryIndex - countriesPerPage;
@@ -56,7 +57,7 @@ const CardsContainer = () => {
       
     return (
         <div> 
-            {countries.length === 0
+            {loading 
             ?
             <div className={style.bkground}>
             <div class={style.wrapper}>
@@ -73,7 +74,7 @@ const CardsContainer = () => {
 
             <div className={style.container}>
                 
-            
+                <SearchBar />
 
                 <div className={style.filtros}>
                         <select className={style.alfabetico} onChange={event => sortNameHandler(event)}>
