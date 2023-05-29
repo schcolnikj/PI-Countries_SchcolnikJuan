@@ -161,6 +161,7 @@ const Form = () => {
                         id="1" 
                         name = 'difficulty'
                         onChange={(event) => handleChoose(event)}
+                        required
                         />
                         <label className={style.difficultyLabel}>2</label>
                         <input 
@@ -170,6 +171,7 @@ const Form = () => {
                         id="2"
                         name = 'difficulty'
                         onChange={(event) => handleChoose(event)}
+                        required
                         />
                         <label className={style.difficultyLabel}>3</label>
                         <input 
@@ -179,6 +181,7 @@ const Form = () => {
                         id="3"
                         name = 'difficulty'
                         onChange={(event) => handleChoose(event)}
+                        required
                         />
                         <label className={style.difficultyLabel}>4</label>
                         <input 
@@ -188,6 +191,7 @@ const Form = () => {
                         id="4"
                         name = 'difficulty'
                         onChange={(event) => handleChoose(event)}
+                        required
                         />
                         <label className={style.difficultyLabel}>5</label>
                         <input 
@@ -197,6 +201,7 @@ const Form = () => {
                         id="5"
                         name = 'difficulty'
                         onChange={(event) => handleChoose(event)}
+                        required
                         />
                         
                         </div>
@@ -284,7 +289,11 @@ const Form = () => {
                         })}
                     </div>
 
-                    <button className={style.submitButton} type='submit'>
+                    <button 
+                    className={style.submitButton} 
+                    type='submit'
+                    disabled={!input.name || errors.name || !input.difficulty || !input.duration || !input.season || input.countries.length === 0}
+                    >
                         Create Activity!
                     </button>
                 </form>

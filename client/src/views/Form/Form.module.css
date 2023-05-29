@@ -246,5 +246,12 @@ input[type="radio"]:checked:after {
         color: white;
         border: none;
         background-color:rgb(55, 55, 55);
+        transition: all .5s ease;
+}
+
+.submitButton:disabled{
+    background: black;
+    border:  1px solid #2d3436;
+    color: #2d3436;
 }
 
