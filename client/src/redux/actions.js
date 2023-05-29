@@ -38,6 +38,7 @@ export const getCountry = (id) => {
 }
 
 export const getCountryByName = (nombre) => {
+    console.log(nombre);
     return async (dispatch) => {
         try {
             const apiData = await axios ('http://localhost:3001/countries?name=' + nombre)
@@ -48,7 +49,7 @@ export const getCountryByName = (nombre) => {
                 payload: country
             })
         } catch (error) {
-            console.log(error);
+            alert('No hay coincidencias, pruebe con otro nombre')
         }
        
     }
