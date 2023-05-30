@@ -29,6 +29,10 @@ const CardsContainer = () => {
 
     const [orden, setOrden] = useState('')
     let [input, setInput] = useState(1)
+    let datos = countries
+    const max = Math.ceil(
+        datos?.length ? datos.length / countriesPerPage : datos.length / countriesPerPage
+    );
 
     const filterHandler = (event) => {
         dispatch(filterByContinent(event.target.value))
@@ -135,6 +139,7 @@ const CardsContainer = () => {
                         totalCountries= {countries.length} countriesPerPage = {10} 
                         setCurrentPage={setCurrentPage} 
                         currentPage={currentPage}
+                        max={max}
                     />
                 </div>
             

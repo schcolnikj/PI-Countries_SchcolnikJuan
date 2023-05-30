@@ -1,5 +1,4 @@
 .pageButton{
-
     font-size: 10px;
     cursor: pointer;
     border: 1px solid rgb(55, 55, 55);
@@ -30,7 +29,7 @@
     background-color: grey;
     height: 2rem;
     width: 4rem;
-    color: #fff;
+    color: black;
     text-align: center;
     font-weight: bolder;
     transition: .2s;
